@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/backgroun_ultah"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/linear_layout_with_weight"
-        android:textAlignment="center"
-        android:textSize="20sp">
+        android:textColor="@color/black"
+        android:text="Happy Birthday Sam!"
+        android:textSize="30sp">
 
     </TextView>
 
-    <Button
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/gambar_kue"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_1"
-        android:layout_marginBottom="-19dp"
-        android:backgroundTint="#32a852"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_2"
-        android:layout_marginBottom="-19dp"
-        android:backgroundTint="#FBD136"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_3"
-        android:layout_marginBottom="-19dp"
-        android:backgroundTint="#03A9F4"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/button_4"
-        android:backgroundTint="#D905E8"/>
+        android:layout_centerInParent="true"
+        android:src="@drawable/kue_ultah">
 
+    </ImageView>
 
-</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar_kue">
+
+    </TextView>
+
+    <TextView
+        android:text="From Emma."
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</RelativeLayout>
